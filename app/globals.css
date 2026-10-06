@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html,body{height:100%;background:#6e0006;overflow-x:hidden}
+body{color:#F5F0DE;-webkit-tap-highlight-color:transparent}
+.grain::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;mix-blend-mode:multiply;z-index:50;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.paper{background:#F5F0DE;color:#3A2118;box-shadow:0 1px 0 #fff8 inset,0 30px 60px -20px #0009,0 2px 6px #0004;border:1px solid #8A4E2E33}
+.btn{border:1px solid currentColor;padding:.95rem 1.8rem;letter-spacing:.2em;font-size:.75rem;min-height:48px;transition:background .3s,color .3s}
+.btn:hover,.btn:focus-visible{background:#F5F0DE;color:#8F0008;outline:none}
+.btn-ink{color:#8F0008}.btn-ink:hover,.btn-ink:focus-visible{background:#8F0008;color:#F5F0DE}
